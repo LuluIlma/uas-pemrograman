@@ -17,3 +17,6 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/blog', [App\Http\Controllers\Admin\BlogController::class, 'index'])->name('blog');
+Route::get('/blog/create', [App\Http\Controllers\Admin\BlogController::class, 'create'])->name('blog.create');
+
